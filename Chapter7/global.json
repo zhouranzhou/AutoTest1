@@ -1,0 +1,10 @@
+[
+  {
+    "file_root": "api",
+    "include": "getdemo.json"
+  },
+  {
+    "file_root": "api",
+    "include": "postdemo.json"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "description":"get不带参数的请求，http://localhost:12306/book_list",
+    "request": {
+      "method": "get",
+      "uri": "/book_list"
+    },
+    "response": {
+      "json": {
+        "books": [
+          "Python基础编程",
+          "wxPython实战",
+          "Java核心编程",
+          "Java编程思想"
+        ]
+      }
+    }
+  },
+  {
+    "description":"get带参数的请求，http://localhost:12306/book?book_name=java_hxbc",
+    "request": {
+      "method": "get",
+      "uri": "/book",
+      "queries": {
+        "book_name": "java_hxbc"
+      }
+    },
+    "response": {
+      "json": {
+        "name": "Java核心编程",
+        "price": 50
+      }
+    }
+  }
+]

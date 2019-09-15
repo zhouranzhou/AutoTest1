@@ -13,6 +13,19 @@
             </class>
         </classes>
     </test>
+
+    <test name="这些是测试模块2">
+        <classes>
+            <class name="com.tester.extend.demo.TestMethodsDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
     <listeners>
         <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter">
         </listener>

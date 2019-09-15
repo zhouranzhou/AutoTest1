@@ -1,0 +1,8 @@
+[
+  {
+    "description":"这是我们的第一个mock例子",
+    "response": {
+      "text": "Hello, Moco"
+    }
+  }
+]
