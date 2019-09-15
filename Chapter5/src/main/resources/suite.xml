@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite Demo">
+<!--    <test name="LoginTest">-->
+<!--        <classes>-->
+<!--            <class name="com.course.testng.suite.SuiteConfig"></class>-->
+<!--            <class name="com.course.testng.suite.LoginTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="PayTest">-->
+<!--        <classes>-->
+<!--            <class name="com.course.testng.suite.SuiteConfig"></class>-->
+<!--            <class name="com.course.testng.suite.PayTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--执行2个测试类，每个测试类有一个测试方法 tests run: 2-->
+    <test name="LoginTest PayTest">
+        <classes>
+            <class name="com.course.testng.suite.LoginTest"></class>
+            <class name="com.course.testng.suite.PayTest"></class>
+        </classes>
+    </test>
+</suite>
