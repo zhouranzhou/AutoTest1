@@ -1,6 +1,9 @@
 java -jar moco-runner-0.11.0-standalone.jar start -p 12306 -c foo.json
 java -jar moco-runner-0.11.0-standalone.jar http -p 12306 -g global.json
+
 当使用全局配置时，需要使用 -g 选项
 
 post请求不能用浏览器访问，浏览器中的方法只能是get的，
 post接口的调用需要借助工具，使用postman进行查看。
+C:\workspace\muke\AutoTest1\Chapter7\startupWithCookies.json
+java -jar moco-runner-0.11.0-standalone.jar start -p 8888 -c startupWithCookies.json
