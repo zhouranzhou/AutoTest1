@@ -1,0 +1,21 @@
+server:
+  port: 8888   # 配置端口号
+
+
+logging:
+  path: logs   #在同级目录下生成logs文件夹
+  file: mylog.log  # 生成文件
+
+spring:   #spring里面配置mysql地址之类的
+  application:
+    name: myTest   #仅仅是application名字
+  datasource:  #mysql的配置
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/course
+    username: root
+    password: 123456
+
+mybatis:
+  type-alises-package: com.course.model  #javabean，做映射的
+  mapper-locations:
+    - mapper/*    #文件夹mapper  加载下面的所有xml文件

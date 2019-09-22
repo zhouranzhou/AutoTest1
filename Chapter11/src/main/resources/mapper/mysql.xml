@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">    <!--id必须为唯一，因为执行的时候是匹配的id-->
+    <select id="getUserCount" resultType="Integer">    <!--resultType是执行结果返回的数据类型，返回一个用户数-->
+        select count(1) from user;
+    </select>
+
+    <insert id="addUser" parameterType="com.course.model.User">  <!--parameterType是传入参数的数据类型   这是插入操作-->
+        insert into user (name,age,sex) values (#{name},#{age},#{sex})
+    </insert>
+
+    <update id="updateUser" parameterType="com.course.model.User">   <!--这是更新语句-->
+        update user set name = #{name}, age=#{age} where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="Integer">  <!--这是删除语句-->
+        delete from user where id = #{id}
+    </delete>
+</mapper>
