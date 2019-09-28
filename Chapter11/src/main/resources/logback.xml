@@ -40,7 +40,7 @@
         <appender-ref ref="CRAWLER_LOG"/>
     </logger>
 
-    <root level="INFO">   <!--记录日志的级别-->
+    <root level="DEBUG">   <!--记录日志的级别-->
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>

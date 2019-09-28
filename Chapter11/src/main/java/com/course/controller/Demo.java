@@ -34,10 +34,19 @@ public class Demo {
     public int updateUser(@RequestBody User user){
         return template.update("updateUser",user);
     }
+//    post 请求：Content-Type:application/json
+    //{
+    //	"name":"dddd",
+    //	"age":10,
+    //	"sex":"nan",
+    //	"id":1
+    //}
 
     @RequestMapping(value = "/deleteUser",method = RequestMethod.POST)
     @ApiOperation(value = "删除用户")
     public int deleteUser(@RequestParam int id){
         return template.delete("deleteUser",id);
     }
+//    post 请求：form-data
+   // id:4
 }

@@ -3,7 +3,7 @@ server:
 
 
 logging:
-  path: logs   #在同级目录下生成logs文件夹
+  path: logs   #在同目下生成logs文件夹
   file: mylog.log  # 生成文件
 
 spring:   #spring里面配置mysql地址之类的
@@ -18,4 +18,4 @@ spring:   #spring里面配置mysql地址之类的
 mybatis:
   type-alises-package: com.course.model  #javabean，做映射的
   mapper-locations:
-    - mapper/*    #文件夹mapper  加载下面的所有xml文件
+    - mapper/*    #文件夹mapper加下面的所有xml文件

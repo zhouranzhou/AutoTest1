@@ -9,7 +9,7 @@
     </select>
 
     <insert id="addUser" parameterType="com.course.model.User">  <!--parameterType是传入参数的数据类型   这是插入操作-->
-        insert into user (name,age,sex) values (#{name},#{age},#{sex})
+        insert into user (name,age,sex,id) values (#{name},#{age},#{sex},#{id})
     </insert>
 
     <update id="updateUser" parameterType="com.course.model.User">   <!--这是更新语句-->

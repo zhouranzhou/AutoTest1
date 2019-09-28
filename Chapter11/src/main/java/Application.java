@@ -12,7 +12,7 @@ import javax.annotation.PreDestroy;
 @SpringBootApplication
 
 //这是一个启动类
-@ComponentScan("com.course")     //需要扫描的包
+//@ComponentScan("com.course")     //需要扫描的包
 public class Application {
     private static ConfigurableApplicationContext context;
 
