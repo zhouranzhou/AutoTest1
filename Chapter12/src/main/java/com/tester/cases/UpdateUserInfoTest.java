@@ -33,12 +33,11 @@ public class UpdateUserInfoTest {
         //获取更新后的结果
         Thread.sleep(2000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
-        System.out.println(user.toString());
+        System.out.println(user.toString());//查询数据库。获取更新后的结果
+//id:2,userName:hahahaha,password:123456,age:4,sex:1,permission:1,isDelete:1}
 
-
-
-        Assert.assertNotNull(user);
         Assert.assertNotNull(result);
+        Assert.assertNotNull(user);//id:2,userName:hahahaha,password:123456,age:4,sex:1,permission:1,isDelete:1}
 
     }
 
@@ -69,7 +68,7 @@ public class UpdateUserInfoTest {
     private int getResult(UpdateUserInfoCase updateUserInfoCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.updateUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("id",updateUserInfoCase.getUserId());
+        param.put("userId",updateUserInfoCase.getUserId());
         param.put("userName",updateUserInfoCase.getUserName());
         param.put("sex",updateUserInfoCase.getSex());
         param.put("age",updateUserInfoCase.getAge());
@@ -90,6 +89,8 @@ public class UpdateUserInfoTest {
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
         return Integer.parseInt(result);
+//        return Integer.parseInt("0");//将字符串转化为int类型
+
 
     }
 

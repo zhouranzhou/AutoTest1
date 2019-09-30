@@ -146,7 +146,7 @@
     }
   },
   {
-    "description":"增加用户接口",
+    "description":"修改用户接口",
     "request":{
       "uri":"/v1/updateUserInfo",
       "method":"post",
@@ -159,15 +159,16 @@
       }
     },
     "response":{
-      "text":"true"
+      "text":"1"
     }
   },
   {
     "description":"删除用户接口",
     "request":{
-      "uri":"/v1/deleteUser",
+      "uri":"/v1/updateUserInfo",
       "method":"post",
       "json":{
+        "isDelete": "1",
         "userId":8
       },
       "cookies":{
@@ -175,7 +176,7 @@
       }
     },
     "response":{
-      "text":"true"
+      "text":"1"
     }
   }
 
