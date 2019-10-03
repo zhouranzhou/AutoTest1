@@ -41,13 +41,25 @@ public class GetUserInfoTest {
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         System.out.println("自己查库获取用户信息:"+user.toString());
 
+
         List userList = new ArrayList();
         userList.add(user);
         JSONArray jsonArray = new JSONArray(userList);
         System.out.println("获取用户信息:"+jsonArray.toString());
-        System.out.println("调用接口获取用户信息:"+resultJson.toString());
-        Assert.assertEquals(jsonArray,resultJson);
-    }
+        System.out.println("打印出查库返回结果类型"+jsonArray.get(0).getClass());
+
+
+        System.out.println("调用接口获取用户信息:"+resultJson);
+        System.out.println("打印出调用接口返回结果类型"+resultJson.get(0).getClass());
+        Assert.assertEquals(jsonArray.toString(),resultJson.toString());//比较2个字符串的内容是否相等
+
+//        System.out.println(jsonArray.length() == resultJson.length());//判断长度是否相等
+//        System.out.println("打印出jsonArray内存地址"+(System.identityHashCode(jsonArray)));
+//        System.out.println("打印出resultJson内存地址"+(System.identityHashCode(resultJson)));
+//        System.out.println("=========="+(jsonArray.toString()==resultJson.toString()));//打印出内存地址是否相等，返回false
+//        System.out.println("------------"+(jsonArray.equals(resultJson)));//比较是对象是否相等，返回false
+//        System.out.println("------------"+(jsonArray.toString().equals(resultJson.toString())));//比较是2个字符串的值是否相等。返回true
+        }
 
 
     private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
@@ -67,11 +79,12 @@ public class GetUserInfoTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("调用接口result:"+result);
-        List resultList = Arrays.asList(result);
-        JSONArray array = new JSONArray(resultList);
+        System.out.println("调用接口result:"+result+result.getClass());//String类型
+
+//        List resultList = Arrays.asList(result);
+//        JSONArray array = new JSONArray(resultList);
+        JSONArray array = new JSONArray(result);
         System.out.println(array.toString());
         return array;
-
     }
 }

@@ -36,50 +36,26 @@
       "uri":"/v1/getUserInfo",
       "method":"post",
       "json":{
-        "userId":"1"
+        "id":1
       },
       "cookies":{
         "login":"true"
       }
     },
     "response":{
-      "json":{
-        "id":"1",
+      "json":[{
+        "id":1,
         "userName":"zhangsan",
         "password":"123456",
         "age":"20",
         "sex":"0",
         "permission":"0",
         "isDelete":"0"
-      }
+      }]
     }
   },
   {
-    "description":"获取用户信息接口",
-    "request":{
-      "uri":"/getUserInfo",
-      "method":"post",
-      "json":{
-        "userId":"1"
-      },
-      "cookies":{
-        "login":"true"
-      }
-    },
-    "response":{
-      "json":{
-        "id":"1",
-        "userName":"zhangsan",
-        "password":"123456",
-        "age":"20",
-        "sex":"0",
-        "permission":"0",
-        "isDelete":"0"
-      }
-    }
-  },
-  {
-    "description":"获取用户信息接口",
+    "description":"获取用户列表接口",
     "request":{
       "uri":"/v1/getUserListInfo",
       "method":"post",
@@ -93,17 +69,15 @@
     "response":{
       "json":[
         {
-
-        "id":1,
-        "userName":"zhangsan",
-        "password":"123456",
-        "age":"20",
-        "sex":"0",
-        "permission":"0",
-        "isDelete":"0"
+          "id":1,
+          "userName":"zhangsan",
+          "password":"123456",
+          "age":"20",
+          "sex":"0",
+          "permission":"0",
+          "isDelete":"0"
       },
         {
-
           "id":3,
           "userName":"wangwu",
           "password":"123456",
@@ -120,6 +94,8 @@
           "sex":"0",
           "permission":"0",
           "isDelete":"0"
+        },{
+          "id":9,"userName":"zhao9","password":"zhaozhao","age":"36","sex":"0","permission":"1","isDelete":"0"
         }
       ]
     }
@@ -133,7 +109,7 @@
         "userName":"zhao9",
         "password":"zhaozhao",
         "sex":"0",
-        "age":"35",
+        "age":"36",
         "permission":"1",
         "isDelete":"0"
       },

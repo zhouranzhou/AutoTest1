@@ -79,9 +79,11 @@ public class GetUserInfoListTest {
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println("调用接口infoList 返回的结果类型"+result.getClass());
         JSONArray jsonArray = new JSONArray(result);
 
         System.out.println("调用接口list result:"+result);
+        System.out.println("调用接口list result转换为JsonArray:"+jsonArray);
 
         return jsonArray;
 
