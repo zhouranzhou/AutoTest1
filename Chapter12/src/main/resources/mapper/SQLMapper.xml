@@ -42,7 +42,6 @@
         and age=#{age}
         and permission=#{permission}
         and isDelete=#{isDelete};
-
     </select>
 
     <!--获取用户信息-->

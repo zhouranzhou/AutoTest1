@@ -61,7 +61,8 @@ public class GetUserInfoListTest {
     }
 
     private JSONArray getJsonResult(GetUserListCase getUserListCase) throws IOException {
-        HttpPost post = new HttpPost(TestConfig.getUserListUrl);
+//        HttpPost post = new HttpPost(TestConfig.getUserListUrl);//如果使用moco的话，用这个接口地址
+        HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);//使用http的话，用这个接口地址
         JSONObject param = new JSONObject();
         param.put("userName",getUserListCase.getUserName());
         param.put("sex",getUserListCase.getSex());
