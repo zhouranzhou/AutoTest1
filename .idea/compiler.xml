@@ -10,10 +10,10 @@
         <module name="Chapter12" />
         <module name="Chapter11" />
         <module name="Chapter10" />
-        <module name="Chapter11 (1)" />
         <module name="Chapter9" />
-        <module name="Chapter6" />
         <module name="Chapter5" />
+        <module name="Chapter6" />
+        <module name="Chapter11 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,7 +35,7 @@
       <module name="Chapter11" options="-parameters" />
       <module name="Chapter11 (1)" options="-parameters" />
       <module name="Chapter12" options="-parameters" />
-      <module name="Chapter13" options="-parameters" />
+      <module name="Chapter13" options="-parameters -extdirs C:\workspace\muke\AutoTest1\Chapter13/lib" />
       <module name="Chapter6" options="-parameters" />
       <module name="Chapter6---1" options="-parameters" />
       <module name="Chapter9" options="-parameters" />

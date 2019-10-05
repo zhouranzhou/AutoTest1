@@ -1,0 +1,13 @@
+测试代码使用mvn 打包：
+
+
+windows下安装maven成功并配置环境变量，以管理员身份运行IDEA，在命令行（Terminal）下运行：
+
+C:\workspace\muke\AutoTest1\Chapter12>mvn clean
+mvn clean 删除target目录
+
+C:\workspace\muke\AutoTest1\Chapter12>mvn package
+
+mvn clean package 删除target后重新执行测试,并生成Chapter12-1.0-SNAPSHOT.jar包
+
+也可以使用右边的，Maven--Chapter12--lifecycle--clean，点击下，表示执行maven clean命令。建议使用命令行进行执行

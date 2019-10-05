@@ -1,0 +1,17 @@
+com\tester\cases\UpdateUserInfoTest.class
+com\tester\model\User.class
+com\tester\utils\DatabaseUtil.class
+com\tester\model\UpdateUserInfoCase.class
+com\tester\utils\ConfigFile.class
+com\tester\config\ExtentTestNGIReporterListener$1.class
+com\tester\model\GetUserInfoCase.class
+com\tester\config\TestConfig.class
+com\tester\model\AddUserCase.class
+com\tester\model\InterfaceName.class
+com\tester\cases\GetUserInfoListTest.class
+com\tester\model\LoginCase.class
+com\tester\cases\GetUserInfoTest.class
+com\tester\model\GetUserListCase.class
+com\tester\cases\LoginTest.class
+com\tester\config\ExtentTestNGIReporterListener.class
+com\tester\cases\AddUserTest.class
